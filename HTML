@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-start">
+            <div class="tourism-card">
+                <h1 class="heading"> Hydrabad - Tourism </h1>
+                <p class="paragraph"> Explore local places of Bhagyanagaram </p>
+                <button class="button-card" onclick="display('sectionFaviouritePlaces')"> Get Started </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFaviouritePlaces">
+        <div class="favourite-place-bg-container">
+            <div class="favourite-place-bg-heading"> Favourite Place
+                <div class="favourite-place-card-caontainer d-flex flex-row" onclick="display('sectioncharminar')">
+                    <div>
+                        <h1 class="favourite-place-card-heading"> Charminar </h1>
+                        <p class="favourite-plcae-card-paragraph"> The Charminar is a massive arch built by Mohammed Quli Qutab Shah, in 1591 to commemorate the end of the plague in the city. </p>
+                    </div>
+                    <img src="https://thumbs.dreamstime.com/b/charminar-hyderabad-india-view-icon-builiding-42242588.jpg" class="favourite-plcae-card-image" />
+                </div>
+                <div class="favourite-place-card-caontainer d-flex flex-row" onclick="display('sectiongolcondafort')">
+                    <div>
+                        <h1 class="favourite-place-card-heading"> Golconda Fort </h1>
+                        <p class="favourite-plcae-card-paragraph"> Golconda is renowned for the diamonds found on the south-east at Kollur Mine near Kollur, Guntur district, Paritala and Atkur in Krishna district and cut in the city during the Kakatiya reign. </p>
+                    </div>
+                    <img src="https://c8.alamy.com/comp/D2C4HC/inside-golconda-fort-hyderabad-andhra-pradesh-india-D2C4HC.jpg" class="favourite-plcae-card-image" />
+                </div>
+                <div class="favourite-place-card-caontainer d-flex flex-row" onclick="display('sectionhussainsagar')">
+                    <div>
+                        <h1 class="favourite-place-card-heading"> Hussain Sagar </h1>
+                        <p class="favourite-plcae-card-paragraph"> Hussain Sagar is a heart-shaped lake in Hyderabad, Telangana, built by Ibrahim Quli Qutb Shah in 1563. It is spread across an area of 5.7 square kilometres and is fed by the River Musi. </p>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/6f/bd/e5/6fbde595111f3885dc699dde67bd4547.jpg" class="favourite-plcae-card-image" />
+                </div>
+                <div class="favourite-place-card-caontainer d-flex flex-row" onclick="display('sectionbirlamandir')">
+                    <div>
+                        <h1 class="favourite-place-card-heading"> Birla Mandir </h1>
+                        <p class="favourite-plcae-card-paragraph"> Birla Mandir is a Hindu temple, built on a 280 feet high hillock called Naubath Pahad on a 13 acres plot. The construction took 10 years and was opened in 1976 by Swami Ranganathananda of Ramakrishna Mission. </p>
+                    </div>
+                    <img src="https://media.tripinvites.com/places/hyderabad/birla-mandir/birla-mandir-hyderabad-featured.jpg" class="favourite-plcae-card-image" />
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionHome')"> Back </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectioncharminar">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-main-heading"> Detailed View </h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div id="charminarcarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#charminarcarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#charminarcarousel" data-slide-to="1"></li>
+                            <li data-target="#charminarcarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.gettyimages.com/photos/light-trails-on-road-against-char-minar-in-illuminated-city-at-night-picture-id1139852351?k=6&m=1139852351&s=612x612&w=0&h=fyUSl30upWFh5PS4gfzwZ01RnmXLiwbTGJKq3wI7ER8=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/high-angle-view-of-illuminated-char-minar-amidst-market-at-night-picture-id890940416?k=6&m=890940416&s=612x612&w=0&h=cJqawe84DUeH_UeKziDo47Q_VPr1ktOp_AGukQ8ROMg=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/low-angle-view-of-charminar-at-night-picture-id144454048?k=6&m=144454048&s=612x612&w=0&h=Y3_EPd7ZxVKqRG0iP9TLdB-nWbFoY-c3ixiajFAqn_Q=" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#charminarcarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#charminarcarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="detailed-view-card-container-heading"> CHARMINAR </h1>
+                    <p class="detailed-view-card-description"> The Charminar (lit "four minarets") constructed in 1591, is a monument and mosque located in Hyderabad, Telangana, India. The landmark has become known globally as a symbol of Hyderabad and is listed among the most recognized structures in India. It has also been officially incorporated as the Emblem of Telangana for the state of Telangana. The Charminar's long history includes the existence of a mosque on its top floor for more than 400 years. While both historically and religiously significant, it is also known for its popular and busy local markets surrounding the structure, and has become one of the most frequented tourist attractions in Hyderabad. Charminar is also a site of numerous festival celebrations, such as Eid-ul-adha and Eid al-Fitr.</p>
+                    <ul>
+                        <li> Makkah Masjid </li>
+                        <li> Char Kaman and Gulzar Houz </li>
+                        <li> Bazaars </li>
+                    </ul>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFaviouritePlaces')"> Back </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectiongolcondafort">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-main-heading"> Detailed View </h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div id="gocondafortcarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#gocondafortcarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#gocondafortcarousel" data-slide-to="1"></li>
+                            <li data-target="#gocondafortcarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.gettyimages.com/photos/sunset-over-golconda-picture-id547692463?k=6&m=547692463&s=612x612&w=0&h=tigjC_kzPqDkRx23YuZwdMNQq0iW0M_S41GwgcAw_ko=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/golconda-fort-picture-id487541991?k=6&m=487541991&s=612x612&w=0&h=zbmMUwPV7vT1n80rGaQB3kGyxxeTi9-clOXiKudE0B8=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/the-fort-picture-id159342802?k=6&m=159342802&s=612x612&w=0&h=_OwAuvgUUGgur4Xp5nYzdC87jrESF9b5_gnCgxfadUM=" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#gocondafortcarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#gocondafortcarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="detailed-view-card-container-heading"> GOLCONDA FORT </h1>
+                    <p class="detailed-view-card-description"> Golconda Fort, also known as Golkonda (Telugu: "shepherds' hill"), is a fortified citadel and an early capital city of the Qutb Shahi dynasty (c. 1512–1687), located in Hyderabad, Telangana, India. Because of the vicinity of diamond mines, especially Kollur Mine, Golconda flourished as a trade centre of large diamonds, known as the Golconda Diamonds. The region has produced some of the world's most famous diamonds, including the colourless Koh-i-Noor (now owned by the United Kingdom), the blue Hope (United States), the pink Daria-i-Noor (Iran), the white Regent (France), the Dresden Green (Germany), and the colourless Orlov (Russia), Nizam and Jacob (India), as well as the now lost diamonds Florentine Yellow, Akbar Shah and Great Mogul. Several dynasties ruled Golconda over years: </p>
+                    <ul>
+                        <li> Kakatiya Kings </li>
+                        <li> Musunuri Nayakas </li>
+                        <li> Bahamani Sultans </li>
+                    </ul>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFaviouritePlaces')"> Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionhussainsagar">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-main-heading"> Detailed View </h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div id="hussainsagarcarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#hussainsagarcarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#hussainsagarcarousel" data-slide-to="1"></li>
+                            <li data-target="#hussainsagarcarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.gettyimages.com/photos/buddha-statue-on-platform-in-hussain-sagar-picture-id148721835?k=6&m=148721835&s=612x612&w=0&h=3ub8ga0hO-qNf4KgcCsb1vSCCtKVtszrFmQ1hzz6pp4=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/low-angle-view-of-a-statue-of-buddha-hussain-sagar-hyderabad-andhra-picture-id84474535?k=6&m=84474535&s=612x612&w=0&h=FazL8l4RsQgvH7_2WMIn0DrP-jcxhXtvsQbtMgkERGE=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/indian-devotees-watch-as-workers-use-a-crane-to-immerse-an-idol-of-picture-id490256442?k=6&m=490256442&s=612x612&w=0&h=unBLBvCOEdSh0nIrZje9rsENyjIV5dLpUquGSXfaCFg=" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#hussainsagarcarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#hussainsagarcarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="detailed-view-card-container-heading"> HUSSAIN SAGAR </h1>
+                    <p class="detailed-view-card-description"> Hussain Sagar (alternatively referred to as Tank Bund,[1] (Telugu pronunciation: [ɦusen sɑːgər])) is a heart-shaped lake in Hyderabad, Telangana, built by Ibrahim Quli Qutb Shah in 1563. It is spread across an area of 5.7 square kilometres (2.2 sq mi) and is fed by the River Musi. A large monolithic statue of the Gautama Buddha, erected in 1992, stands on Gibraltar Rock in the middle of the lake. It also separates the city centre of Hyderabad from its neighborhood Secunderabad.[2] The maximum depth of the lake is 32 feet (9.8 m).</p>
+                    <ul>
+                        <li> Buddha statue </li>
+                        <li> Lumbini Park </li>
+                        <li> Snow World </li>
+                    </ul>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFaviouritePlaces')"> Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionbirlamandir">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-main-heading"> Detailed View </h1>
+            <div class="detailed-view-card-container">
+                <div>
+                    <div id="birlamandircarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#birlamandircarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#birlamandircarousel" data-slide-to="1"></li>
+                            <li data-target="#birlamandircarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.gettyimages.com/photos/low-angle-view-of-birla-temple-hyderabad-andhra-pradesh-india-picture-id464741779?k=6&m=464741779&s=612x612&w=0&h=EAfKBeHdjOchVceAi4P-4TMHBjYEkGdkeTexhvdkxfw=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/birla-mandir-and-buddha-statue-in-one-frame-picture-id1292827477?k=6&m=1292827477&s=612x612&w=0&h=FF_jr6aXXsuZrDteug9Jo3Vq1PybMBLXZ9EvNOwcM_k=" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/photos/birla-mandir-hyderabad-andhra-pradesh-india-picture-id481686747?k=6&m=481686747&s=612x612&w=0&h=-bwdlhfexue_wb0cuurEcNcWUrO678wwEzU14vJEKBM=" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#birlamandircarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#birlamandircarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="detailed-view-card-container-heading"> BIRLA MANDIR </h1>
+                    <p class="detailed-view-card-description"> Birla Mandir is a Hindu temple, built on a 280 feet (85 m) high hillock called Naubath Pahad on a 13 acres (53,000 m2) plot. The construction took 10 years and was opened in 1976 by Swami Ranganathananda of Ramakrishna Mission. The temple was constructed by Birla Foundation, which has also constructed several similar temples across India, all of which are known as Birla Mandir.</p>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFaviouritePlaces')"> Back</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"> </script>
+</body>
+
+</html>
